@@ -1,0 +1,40 @@
+/* .slider-section {
+    margin: 4rem 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Playfair+Display&display=swap');
+
+
+
+.slider-wrapper {
+    padding: 2rem;
+}
+
+
+.slider-wrapper h2 {
+    color: #8A1412;
+    text-align: center;
+    padding-bottom: 1rem;
+    /* Header */
+    font-family: Playfair Display;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    /* 116.667% */
+    text-transform: uppercase;
+}
+
+
+.gallery-section .slider-wrapper .image-slider{
+    padding: 2rem 0;
+    background: #ECECEC;
+
+}
+
+@media (max-width:767px) {
+    .slider-wrapper{
+        padding: 1rem  0;
+    }
+}

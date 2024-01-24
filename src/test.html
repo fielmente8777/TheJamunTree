@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+
+        section {
+            margin: 0 auto;
+            max-width: 1300px;
+            padding: 0 10px;
+        }
+
+        ul {
+            display: grid;
+            list-style: none;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            font-weight: bolder;
+            padding: 0;
+        }
+
+        .image_wrapper {
+            position: relative;
+        }
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            background: rgba(57, 57, 57, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay_2 {
+            inset: 0;
+        }
+
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <section>
+        <ul>
+            <li class="image_wrapper">
+                <img src="https://source.unsplash.com/VWcPlbHglYc" alt="" />
+                <div class="overlay overlay_2">
+                    <h3>Image title</h3>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

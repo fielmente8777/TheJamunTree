@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Playfair+Display&display=swap');
+
+
+.faclity-section {
+    padding: 4rem 0;
+}
+
+.aboutPage-Facility-section .text-div {
+    background: #ECECEC;
+}
+
+.faclity-section .image-div {
+    padding: 0;
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .facility-ryt .facility-ryt-row {
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+
+    .facility-ryt .facility-ryt-row {
+        flex-direction: column-reverse;
+    }
+}
