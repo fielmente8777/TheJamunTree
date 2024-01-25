@@ -347,6 +347,10 @@ const Footer = (props) => {
           style={{
             bottom: scrollVal ? "2%" : "110%",
             transition: "all 1s",
+            cursor: "pointer",
+          }}
+          onClick={() => {
+            window.scrollTo(0, 0);
           }}
         >
           <MdOutlineKeyboardDoubleArrowUp size={30} className="icon-up" />
