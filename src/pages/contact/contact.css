@@ -1,105 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Playfair+Display&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Playfair+Display&display=swap");
 
 .contact-section {
-    padding: 4rem 0;
+  padding: 4rem 0;
 }
 
 .contact-form {
-    padding: 4rem 2rem;
-    border: 0.5px solid #8A1412;
+  padding: 4rem 2rem;
+  border: 0.5px solid #8a1412;
 }
 
 .contact-row {
-    gap: 1rem;
-    padding-bottom: 1rem;
-    text-align: justify;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  text-align: justify;
 }
 
 .contact-row .first-col {
-    padding-right: 8rem;
+  padding-right: 8rem;
 }
 
 .contact-row .contact-row-iner {
-    display: flex;
-    gap: 5px;
-    align-items: center;
+  display: flex;
+  gap: 5px;
+  align-items: center;
 }
 
 .contact-phone {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
 .contact-wrapper h4 {
-    color: #8A1412;
+  color: #8a1412;
 
-    /* Header */
-    font-family: Playfair Display;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.75rem;
-    /* 116.667% */
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-
+  /* Header */
+  font-family: Playfair Display;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+  /* 116.667% */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .contact-form .form-row {
-    gap: 0.9rem;
+  gap: 0.9rem;
 }
 
 .contact-form .form-row input {
-    border: 0.5px solid #343434;
-    border-radius: 0;
+  border: 0.5px solid #343434;
+  border-radius: 0;
 }
 
 .contact-form .form-row textarea {
-    border: 0.5px solid #343434;
-    border-radius: 0;
+  border: 0.5px solid #343434;
+  border-radius: 0;
 }
 
 .contact-form .form-row input::placeholder {
-    color: #9B9B9B;
+  color: #9b9b9b;
 
-    /* Body */
-    font-family: Montserrat;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5rem;
-    /* 150% */
+  /* Body */
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  /* 150% */
 }
-
 
 .contact-btn {
-    display: inline-flex;
-    padding: 0.7rem 2rem;
-    justify-content: center;
-    align-items: center;
-    gap: 0.625rem;
-    background: #CBB33B;
-    color: #fff;
-    outline: 0;
-    border: 0;
-    border-radius: 0;
+  display: inline-flex;
+  padding: 0.7rem 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  background: var(--btn-bg-color);
+  color: #fff;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  &:hover {
+    background-color: var(--btn-bg-hover);
+  }
 }
 
-
-
-
-
-@media screen and (min-width:768px) and (max-width:1023px) {
-    .contact-row .first-col {
-        padding-right: 4rem;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact-row .first-col {
+    padding-right: 4rem;
+  }
 }
 
-@media screen and (max-width:767px) {
-    .contact-row .first-col {
-        padding-right: 1rem;
-    }
+@media screen and (max-width: 767px) {
+  .contact-row .first-col {
+    padding-right: 1rem;
+  }
 }
