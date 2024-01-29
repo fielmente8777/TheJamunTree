@@ -1,15 +1,13 @@
-import React, { useContext } from "react";
-import Banner from "../../components/Banner";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import Row from "react-bootstrap/Row";
-import FloatingLabel from "react-bootstrap/FloatingLabel";
-import "./contact.css";
 import { Helmet } from "react-helmet";
+import Banner from "../../components/Banner";
 import NoteContext from "../../context/notes/NoteContext";
+import "./contact.css";
 const Contact = ({ Pagetitle, Seodata }) => {
   const { Footer, Location, DataToarrange } = useContext(NoteContext);
   const [validated, setValidated] = useState(false);
@@ -38,7 +36,7 @@ const Contact = ({ Pagetitle, Seodata }) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        Domain: "bhairahawagardenresort", // Replace with your actual domain value
+        Domain: "tjt28318704", // Replace with your actual domain value
         email: email,
         Name: Name,
         Contact: number,

@@ -1,16 +1,14 @@
-import React, { useContext } from 'react'
-import './faclity.css'
-import Banner from '../../components/Banner'
-import Slider from "react-slick";
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet'
-import FacilityContent from './FacilityContent';
-import aboutImage from '../../assets/images/about-pageimg.png'
-import superDelux from '../../assets/images/superdelux.png'
-import suiteRoom from '../../assets/images/suiteroom.png'
-import steam from '../../assets/images/steam-sunna.png'
+import React, { useContext } from 'react';
+import { Helmet } from 'react-helmet';
+import aboutImage from '../../assets/images/about-pageimg.png';
+import steam from '../../assets/images/steam-sunna.png';
+import suiteRoom from '../../assets/images/suiteroom.png';
+import superDelux from '../../assets/images/superdelux.png';
+import Banner from '../../components/Banner';
+import OffferSection from '../../components/OfferSection';
 import NoteContext from '../../context/notes/NoteContext';
-import OffferSection from '../../components/OfferSection'
+import FacilityContent from './FacilityContent';
+import './faclity.css';
 
 const Facility = ({ Pagetitle, Seodata }) => {
   const { Footer } = useContext(NoteContext);
@@ -84,26 +82,7 @@ const Facility = ({ Pagetitle, Seodata }) => {
           </div>
         </section>
 
-        <section class="section thingtodo-section">
-          <div class="container">
-            <h2 class="section-heading my-4">OUR MENU INCLUDES</h2>
-            <div class="wrapper-div-nearby thingstodo-wrapper">
-              <Slider {...settings1} className='image-slider'>
-                {Menu.map((data) => {
-                  return (
-                    <div class="nearby-slider">
-                      <img src={data.Image} alt="Things to do" />
-                      <div class="slider-caption">
-                        <span>{data.Name}</span>
-                      </div>
-                    </div>
-                  )
-                })}
-              </Slider>
-            </div>
-
-          </div>
-        </section>
+        
 
         <OffferSection />
       </div>

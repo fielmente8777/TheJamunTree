@@ -1,34 +1,31 @@
 import React, { useContext, useState } from "react";
-import { GrWifi } from "react-icons/gr";
-import { MdLocalBar, MdRoomService } from "react-icons/md";
+import { Helmet } from "react-helmet";
 import { GiVideoConference } from "react-icons/gi";
-import { GrMapLocation } from "react-icons/gr";
-import { RiTShirtAirFill } from "react-icons/ri";
-import { MdCasino } from "react-icons/md";
-import { LuParkingCircle } from "react-icons/lu";
-import { TiBatteryCharge } from "react-icons/ti";
-import { MdCleaningServices } from "react-icons/md";
+import { GrMapLocation, GrWifi } from "react-icons/gr";
 import { IoRestaurantOutline } from "react-icons/io5";
+import { LuParkingCircle } from "react-icons/lu";
+import { MdCasino, MdCleaningServices, MdLocalBar, MdRoomService } from "react-icons/md";
+import { RiTShirtAirFill } from "react-icons/ri";
 import { TbIroningSteam } from "react-icons/tb";
+import { TiBatteryCharge } from "react-icons/ti";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
 import Banner from "../../components/Banner";
 import "../../style/about.css";
 import "../../style/responsive.css";
-import Slider from "react-slick";
-import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
-import aboutImage from "../../assets/images/aboutimage.png";
 import aboutpageImage from "../../assets/images/about-pageimg.png";
-import superDelux from "../../assets/images/superdelux.png";
-import suiteRoom from "../../assets/images/suiteroom.png";
+import aboutImage from "../../assets/images/aboutimage.png";
 import steam from "../../assets/images/steam-sunna.png";
+import suiteRoom from "../../assets/images/suiteroom.png";
+import superDelux from "../../assets/images/superdelux.png";
 // import FindCard from './FindCard';
-import NoteContext from "../../context/notes/NoteContext";
 import HTMLReactParser from "html-react-parser";
+import NoteContext from "../../context/notes/NoteContext";
 
 import bicycle from "../../assets/images/bicycle.png";
-import localculture from "../../assets/images/localculture.png";
 import historical from "../../assets/images/historical.png";
+import localculture from "../../assets/images/localculture.png";
 import OfferSection from "../../components/OfferSection";
 
 const About = ({ Pagetitle, Seodata }) => {
@@ -1328,7 +1325,7 @@ const About = ({ Pagetitle, Seodata }) => {
         </div>
       </section>
 
-      <section className="section-find">
+      {/* <section className="section-find">
         <div className="container">
           <h2 class="section-heading">How to find Bhairahawa Garden Resort</h2>
           <div className="findcard-wrapper">
@@ -1534,7 +1531,7 @@ const About = ({ Pagetitle, Seodata }) => {
             </Slider>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section class="section thingtodo-section">
         <div class="container">

@@ -41,7 +41,7 @@ const Navigation = (props) => {
       <nav class="navbar d-none navbar-expand-lg">
         <div class="container nav-wrapper">
           <div className="mobile-left-nav">
-            <Link to="tel:+977 71 591697" className="mobile-phone-icon">
+            <Link to={`tel:${Footer.Phone}`} className="mobile-phone-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -268,7 +268,7 @@ const Navigation = (props) => {
                 />
               </svg>
             </button>
-            <Link to="tel:+977 71 591697" className="laptop-phone-icon">
+            <Link to={`tel:${Footer.Phone}`} className="laptop-phone-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -353,7 +353,7 @@ const Navigation = (props) => {
                 </svg>
               </Link>
 
-              <Link to="tel:+977 71 591697" className="mobile-phone-icon">
+              <Link to={`tel:${Footer.Phone}`} className="mobile-phone-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"

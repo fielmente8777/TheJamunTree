@@ -1,29 +1,25 @@
 import React, { useContext, useEffect } from "react";
-import { GrWifi } from "react-icons/gr";
-import { MdLocalBar, MdRoomService } from "react-icons/md";
 import { GiVideoConference } from "react-icons/gi";
-import { GrMapLocation } from "react-icons/gr";
-import { RiTShirtAirFill } from "react-icons/ri";
-import { MdCasino } from "react-icons/md";
-import { LuParkingCircle } from "react-icons/lu";
-import { TiBatteryCharge } from "react-icons/ti";
-import { MdCleaningServices } from "react-icons/md";
+import { GrMapLocation, GrWifi } from "react-icons/gr";
 import { IoRestaurantOutline } from "react-icons/io5";
+import { LuParkingCircle } from "react-icons/lu";
+import { MdCasino, MdCleaningServices, MdLocalBar, MdRoomService } from "react-icons/md";
+import { RiTShirtAirFill } from "react-icons/ri";
 import { TbIroningSteam } from "react-icons/tb";
+import { TiBatteryCharge } from "react-icons/ti";
 
-import Banner from "../../components/Banner";
+import HTMLReactParser from "html-react-parser";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import HTMLReactParser from "html-react-parser";
+import Banner from "../../components/Banner";
 
 import aboutImage from "../../assets/images/aboutimage.png";
-import superDelux from "../../assets/images/superdelux.png";
-import suiteRoom from "../../assets/images/suiteroom.png";
 import steam from "../../assets/images/steam-sunna.png";
+import suiteRoom from "../../assets/images/suiteroom.png";
+import superDelux from "../../assets/images/superdelux.png";
+import AllRooms from "../../components/AllRooms";
 import OfferSection from "../../components/OfferSection";
 import NoteContext from "../../context/notes/NoteContext";
-import AllRooms from "../../components/AllRooms";
-import { Feature } from "../../components/Feature";
 
 const Rooms = ({ Pagetitle }) => {
   const { Engine, BunchImages, SectionTitles, Services, Rooms, RoomsAPI } =
@@ -1284,32 +1280,7 @@ const Rooms = ({ Pagetitle }) => {
       </section>
 
       {/* <!-- Hotel facility section  --> */}
-      <section class="facility-section section">
-        <div class="container">
-          <h2 class="section-heading">{SectionTitles.Facilities.Title}</h2>
-          <p class="section-para">{SectionTitles.Facilities.Description}</p>
-          {/* <!-- Swiper --> */}
-          <div class="wrapper-div">
-            <Slider {...settings1} className="image-slider">
-              {Services.map((data) => {
-                return (
-                  <div className="facilities-img-div">
-                    <img src={data.Image} alt="facilties" />
-                    <div className="">
-                      <span>{data.Title}</span>
-                    </div>
-                  </div>
-                );
-              })}
-            </Slider>
-          </div>
-          <div class="d-flex w-100 justify-content-center custom-btn-div">
-            <Link to={Engine} target="_blank" class="custom-btn">
-              BOOK NOW
-            </Link>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Offer Start  */}
 

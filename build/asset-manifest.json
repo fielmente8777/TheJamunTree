@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.56744ae0.css",
+    "main.js": "/static/js/main.b8af9918.js",
+    "static/js/787.2b78b8c8.chunk.js": "/static/js/787.2b78b8c8.chunk.js",
+    "static/media/banner.jpg": "/static/media/banner.201ca239e433d2ae773f.jpg",
+    "static/media/about-banner.png": "/static/media/about-banner.85fcb2185ce24bad372d.png",
+    "static/media/aboutimage.png": "/static/media/aboutimage.2a4f9bbbc983f641fede.png",
+    "static/media/about-pageimg.png": "/static/media/about-pageimg.1fe67b5e41c3dbf3bf59.png",
+    "static/media/superdelux.png": "/static/media/superdelux.de9f2ab1dddd3a39228e.png",
+    "static/media/suiteroom.png": "/static/media/suiteroom.7357d5dbd95e13bbe22e.png",
+    "static/media/localculture.png": "/static/media/localculture.9bf4fd8641574b7018b7.png",
+    "static/media/bicycle.png": "/static/media/bicycle.bc015582401387a6a787.png",
+    "static/media/historical.png": "/static/media/historical.371bfd64f9e01ab63303.png",
+    "static/media/steam-sunna.png": "/static/media/steam-sunna.a6384205d7ba487c75c4.png",
+    "static/media/logo 2.jpg": "/static/media/logo 2.038824a2594e4a0c8750.jpg",
+    "index.html": "/index.html",
+    "main.56744ae0.css.map": "/static/css/main.56744ae0.css.map",
+    "main.b8af9918.js.map": "/static/js/main.b8af9918.js.map",
+    "787.2b78b8c8.chunk.js.map": "/static/js/787.2b78b8c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56744ae0.css",
+    "static/js/main.b8af9918.js"
+  ]
+}

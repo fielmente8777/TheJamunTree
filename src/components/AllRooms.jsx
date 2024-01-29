@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import NoteContext from "../context/notes/NoteContext";
 import Slider from "react-slick";
+import NoteContext from "../context/notes/NoteContext";
 
 const AllRooms = () => {
   const { Rooms, RoomsAPI, SectionTitles, Engine } = useContext(NoteContext);
@@ -32,7 +32,7 @@ const AllRooms = () => {
                 >
                   <div class="col-sm-12 col-md-12 col-lg-6 image-div">
                     <label className="room-price-label">
-                      USD {data.price} / NIGHT
+                      INR {data.price} / NIGHT
                     </label>
                     <Slider {...settings} className="image-slider">
                       {data.roomImage.map((image) => {
@@ -76,7 +76,7 @@ const AllRooms = () => {
                           />
                         </svg>
 
-                        <span>4 Persons</span>
+                        <span>{data.adult} Adults, {data.child} kids</span>
                       </div>
                       <div class="col room-facility-div">
                         <svg
