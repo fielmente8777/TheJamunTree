@@ -29,7 +29,9 @@ const Contact = ({ Pagetitle, Seodata }) => {
 
     const { email, Name, Subject, Description, number } = formData;
 
-    fetch(`https://eazotel.eazotel.com/api/dashboard/editcontact`, {
+    console.log(Subject);
+
+    fetch(`https://nexon.eazotel.com/eazotel/addcontacts`, {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, /",
