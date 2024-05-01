@@ -29,6 +29,7 @@ const AllRooms = () => {
                   class={`${
                     index % 2 !== 0 ? "" : "flex-row-reverse"
                   } row phone-row`}
+                  key={index}
                 >
                   <div class="col-sm-12 col-md-12 col-lg-6 image-div">
                     <label className="room-price-label">
@@ -76,7 +77,9 @@ const AllRooms = () => {
                           />
                         </svg>
 
-                        <span>{data.adult} Adults, {data.child} kids</span>
+                        <span>
+                          {data.adult} Adults, {data.child} kids
+                        </span>
                       </div>
                       <div class="col room-facility-div">
                         <svg

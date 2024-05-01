@@ -149,9 +149,9 @@ const Home = ({ Seodata, slugs }) => {
           {/* <!-- Swiper --> */}
           <div class="wrapper-div">
             <Slider {...settings1} className="image-slider">
-              {Services.map((data) => {
+              {Services.map((data, index) => {
                 return (
-                  <div className="facilities-img-div">
+                  <div className="facilities-img-div" key={index}>
                     <img src={data.Image} alt="facilties" />
                     <div className="">
                       <span>{data.Title}</span>
